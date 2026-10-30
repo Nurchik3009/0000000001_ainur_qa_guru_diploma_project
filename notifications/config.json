@@ -1,8 +1,8 @@
 {
   "base": {
-    "project": "SauceDemo UI Tests",
-    "environment": "prod",
-    "comment": "SauceDemo UI Tests, @AKaliakbarova",
+    "project": "Ainur Diploma Project — SauceDemo UI Tests",
+    "environment": "Production",
+    "comment": "Дипломный проект QA.GURU | @AKaliakbarova",
     "reportLink": "${BUILD_URL}",
     "language": "ru",
     "allureFolder": "allure-report/",
