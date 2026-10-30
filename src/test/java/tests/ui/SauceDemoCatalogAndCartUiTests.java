@@ -18,6 +18,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Каталог, корзина и оформление заказа")
 @Owner("Ainur Kaliakbarova")
 @Severity(SeverityLevel.CRITICAL)
+@Link(name = "SauceDemo System", url = "https://www.saucedemo.com/")
 public class SauceDemoCatalogAndCartUiTests extends TestBase {
 
     LoginPage loginPage = new LoginPage();
@@ -26,6 +27,8 @@ public class SauceDemoCatalogAndCartUiTests extends TestBase {
     CheckoutPage checkoutPage = new CheckoutPage();
 
     @Test
+    @AllureId("49809")
+    @Issue("REF-29")
     @Story("Каталог и сортировка")
     @DisplayName("Сортировка товаров по цене (low to high)")
     @Tag("ui")
@@ -47,6 +50,8 @@ public class SauceDemoCatalogAndCartUiTests extends TestBase {
     }
 
     @Test
+    @AllureId("49807")
+    @Issue("REF-29")
     @Story("Корзина")
     @DisplayName("Добавление товара в корзину и проверка бейджа")
     @Tag("ui")
@@ -59,6 +64,8 @@ public class SauceDemoCatalogAndCartUiTests extends TestBase {
     }
 
     @Test
+    @AllureId("49812")
+    @Issue("REF-29")
     @Story("Оформление заказа")
     @DisplayName("Полный цикл покупки товара (Checkout Flow)")
     @Tag("ui")

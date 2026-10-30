@@ -19,11 +19,14 @@ import static io.qameta.allure.Allure.step;
 @Feature("Авторизация и сессии")
 @Owner("Ainur Kaliakbarova")
 @Severity(SeverityLevel.BLOCKER)
+@Link(name = "SauceDemo System", url = "https://www.saucedemo.com/")
 public class SauceDemoLoginUiTests extends TestBase {
 
     LoginPage loginPage = new LoginPage();
 
     @Test
+    @AllureId("49808")
+    @Issue("REF-29")
     @Story("Успешный вход")
     @DisplayName("Успешный вход валидного пользователя (standard_user)")
     @Tag("ui")
@@ -39,6 +42,8 @@ public class SauceDemoLoginUiTests extends TestBase {
     }
 
     @Test
+    @AllureId("49811")
+    @Issue("REF-29")
     @Story("Негативные кейсы входа")
     @DisplayName("Ошибка при входе заблокированного пользователя (locked_out_user)")
     @Tag("ui")
@@ -52,6 +57,8 @@ public class SauceDemoLoginUiTests extends TestBase {
     }
 
     @Test
+    @AllureId("49810")
+    @Issue("REF-29")
     @Story("Негативные кейсы входа")
     @DisplayName("Ошибка при входе с неверным паролем")
     @Tag("ui")
@@ -70,6 +77,8 @@ public class SauceDemoLoginUiTests extends TestBase {
     }
 
     @Test
+    @AllureId("49806")
+    @Issue("REF-29")
     @Story("Завершение сессии")
     @DisplayName("Разлогин из системы")
     @Tag("ui")
